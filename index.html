@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Search History Simulator 🔍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <!-- Header -->
+        <header class="app-header">
+            <span class="badge">Saran No. 116</span>
+            <h1>🔍 SEARCH HISTORIAN</h1>
+            <p>Simulasi pencarian dengan fitur memori 5 kata kunci terakhir!</p>
+        </header>
+
+        <!-- Search Bar Section -->
+        <form id="search-form" class="search-form">
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="Ketik kata kunci pencarian..." autocomplete="off" required>
+                <button type="submit" class="btn-search">🔍 Cari</button>
+            </div>
+        </form>
+
+        <!-- Recent Search History Tags -->
+        <div class="history-section">
+            <div class="history-header">
+                <span class="history-title">⏱️ Riwayat Terakhir (Maks 5):</span>
+                <button type="button" id="btn-clear-all" class="btn-clear-all">🗑️ Hapus Semua</button>
+            </div>
+            
+            <div id="history-tags" class="history-tags">
+                <!-- Riwayat kata kunci akan dirender di sini via JS -->
+            </div>
+        </div>
+
+        <!-- Search Results Simulation -->
+        <div class="results-section">
+            <div class="results-header">
+                <span>Hasil Pencarian:</span>
+                <span id="active-keyword-badge" class="keyword-badge">Belum Ada Pencarian</span>
+            </div>
+
+            <div id="results-box" class="results-box">
+                <p class="placeholder-text">Ketik kata kunci di atas atau klik riwayat pencarian untuk melihat simulasi hasil!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
